@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Portfolio - Home</title>
+
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- PNG Image on Tab -->
+    <link rel="icon" href="Images/property.png" type="image/png">
+
+    <!-- ---------- AOS CSS LINK ------------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- ---------- Magnific-popup CSS LINK ------------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
+    <!-- ---------- BootStrap CDN LINK ------------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js">
+
+</head>
+
+<body>
+    <!-- ---------- NavBar Start-------------- -->
+    <div class="navbar">
+        <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="about.html"><i class="fas fa-user"></i><span>About</span></a>
+        <a href="project.html"><i class="fas fa-gears"></i><span>Project</span></a>
+        <a href="contact.html"><i class="fas fa-phone"></i><span>Contact</span></a>
+    </div>
+
+    <!-- ---------- Section Home Start ------------ -->
+    <section class="home">
+        <div class="content" data-aos="zoom-in">
+            <h3>Hi!</h3>
+            <h1>I'm <span class="input"></span></h1>
+            <p>This is Shreya Dey, a Web Developer who enjoys explores new design patterns.</p>
+            <a href="RESUME_SHREYA DEY.pdf" class="btn" download>Download CV <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="image" data-aos="fade-left">
+            <img src="image.png" alt="Profile">
+        </div>
+    </section>
+
+    <!-- ---------- AOS JS LINK ------------ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- ---------- Jquery-min JS LINK ------------ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- ---------- Jquery-min JS LINK ------------ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 1900,
+            delay: 400
+        });
+    </script>
+    <!--------typed js link------>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".input", {
+            strings: ["Shreya Dey", "Web Developer"],
+            typeSpeed: 70,
+            backSpeed: 65,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
